@@ -1,3 +1,4 @@
+/* Default */
 * {
   padding: 0;
   margin: 0;
@@ -8,19 +9,16 @@ body {
   color: #6a5432;
   font-size: 16px;
 }
-.company-symbol {
-  width: 7rem;
-  height: 7rem;
-  padding-left: 60px;
-}
 
-.navBar {
+/* Company name & Navigation bar */
+
+.nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: right;
 }
 
-.navMenu {
+.nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,11 +28,12 @@ body {
 .nav-list {
   list-style-type: none;
   margin-left: 30px;
+  transition-duration: 0.4s;
 }
 
 .nav-list:hover,
 .nav-icon:hover {
-  color: #b09a85;
+  transform: scale(1.1);
 }
 
 .nav-list:active,
@@ -56,6 +55,12 @@ body {
   margin-left: 30px;
 }
 
+.company-symbol {
+  width: 70px;
+  height: 70px;
+  padding-left: 60px;
+}
+
 h3 {
   font-size: 4em;
   font-family: PT Serif;
@@ -71,6 +76,7 @@ h3 {
   font-weight: bold;
 }
 
+/*Main Section*/
 main {
   width: 100%;
   height: 650px;
@@ -81,6 +87,7 @@ main {
   margin-bottom: 50px;
 }
 
+/* button */
 .shop-now {
   color: #6a5432;
   background-color: #f9f7f3ed;
@@ -88,14 +95,13 @@ main {
   box-shadow: 0px 5px #6a5432;
   cursor: pointer;
   border-radius: 5px;
-  margin: 3rem 3rem 0 7rem;
-  padding: 0.7rem 1.5rem;
-  max-width: 126px;
+  margin: 50px 100px 0 100px;
+  padding: 15px 25px;
+  max-width: 130px;
 }
 
 .shop-now:hover {
-  color: white;
-  background-color: #b09a85;
+  transform: scale(1.1, 1.1);
 }
 
 .shop-now:active {
@@ -106,6 +112,62 @@ main {
   top: 3px;
 }
 
+.page-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 2.2em;
+  letter-spacing: 5px;
+}
+
+/* Best seller ranking */
+.bestseller {
+  background-color: white;
+  height: 100%;
+}
+
+.bestseller-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.no1,
+.no2,
+.no3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.best-image {
+  width: 300px;
+  height: 300px;
+}
+
+.num-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.number {
+  font-size: 2em;
+  padding-right: 10px;
+}
+
+.bestseller-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------*/
+/* Policy */
+
 .policy {
   display: flex;
   flex-direction: row;
@@ -114,7 +176,7 @@ main {
 }
 
 .policy-list,
-.icon {
+.policy-icon {
   font-size: 1.2em;
   display: flex;
   flex-direction: row;
@@ -129,7 +191,7 @@ main {
   margin: 0 20px 0 20px;
 }
 
-.icon {
+.policy-icon {
   font-size: 1.5em;
 }
 
@@ -139,68 +201,7 @@ main {
   width: 30%;
 }
 
-.page-title {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 30px 0;
-  font-size: 2.2em;
-  letter-spacing: 0.2em;
-}
-
-.no1-item {
-  background-color: white;
-}
-
-.collection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-}
-
-.couch-pic {
-  width: 30%;
-  height: 30%;
-  padding-left: 50px;
-}
-
-.bestseller-contents {
-  display: flex;
-  flex-direction: column;
-  justify-content: wrap;
-  padding: 20px;
-}
-
-.best-seller span {
-  border: #6a5432 1px solid;
-  display: inline;
-  padding: 5px;
-  margin: 10px;
-}
-
-span {
-  background-color: #f9f7f3ed;
-}
-
-.name-of-product {
-  font-size: 1.5em;
-  padding: 10px;
-  margin: 0 10px;
-}
-
-.product-description {
-  font-size: 1em;
-  padding: 10px;
-}
-
-.btn-bestseller,
-.btn-latest-product {
-  margin: 3rem 3rem 0 3rem;
-}
-
-/* ------------------------------------- */
+/*--------------------------------------------------------*/
 /* Latest Product */
 
 .latest {
@@ -214,7 +215,7 @@ span {
   width: 270px;
   height: 350px;
   padding: 10px 20px 10px 20px;
-  border-radius: 2em;
+  border-radius: 30px;
 }
 
 .product-name,
@@ -235,6 +236,7 @@ span {
   justify-content: center;
 }
 
+/* Guide page to shop site */
 .guide-to-shopsite {
   background-image: url(assets/room3.jpeg);
   background-repeat: no-repeat;
@@ -242,18 +244,20 @@ span {
   height: 100vh;
   width: 100vw;
 }
+
 .guide-sentence {
   font-family: PT serif;
   display: block;
   font-size: 2.5em;
   letter-spacing: 2px;
-  padding-left: 2em;
+  padding-left: 120px;
 }
 
 .guide-sentence:first-child {
-  padding-top: 3em;
+  padding-top: 120px;
 }
 
+/* Email subscription page */
 .subscription {
   background-color: white;
   height: 100%;
@@ -309,6 +313,7 @@ form {
   padding: 10px 30px 30px 30px;
 }
 
+/* Footer */
 footer {
   background-color: #6a5432;
   color: #f9f7f3ed;
@@ -392,13 +397,14 @@ footer {
   font-size: 2em;
   margin: 20px 0;
 }
-
+.contact-icon {
+  transition-duration: 0.4s;
+}
 .contact-icon:hover {
-  color: #b09a85;
+  transform: scale(1.1);
 }
 
 .contact-icon:active {
-  color: white;
   transform: translateY(-0.1875em);
   transition: all 2ms ease-in-out;
 }
@@ -427,7 +433,7 @@ footer {
     background-position: right;
     margin-bottom: 40px;
   }
-  .btn-bestseller,
+
   .btn-latest-product {
     margin: 1rem 3rem 0 3rem;
   }
@@ -473,8 +479,8 @@ footer {
   }
 
   .company-symbol {
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     padding: 60px 0 0 60px;
   }
 
@@ -486,7 +492,7 @@ footer {
     margin-left: 20px;
   }
 
-  .navMenu,
+  .nav-menu,
   .nav-icon-list {
     padding: 20px 20px 20px 0;
   }
@@ -497,8 +503,8 @@ footer {
   }
 
   .shop-now {
-    margin: 2rem 2rem 0 7rem;
-    padding: 0.5rem 1rem;
+    margin: 50px 50px 0 50px;
+    padding: 10px 20px;
   }
 
   .image-latest {
@@ -506,13 +512,8 @@ footer {
     height: 200px;
   }
 
-  .btn-latest-product {
-    padding: 0.3rem 0.7rem;
-    margin: 1rem 3rem 0 3rem;
-  }
-
-  .btn-bestseller {
-    margin: 0.5rem 1rem 0 1rem;
+  .btn-guide {
+    margin-left: 120px;
   }
 
   .company-symbol-footer {
@@ -523,10 +524,6 @@ footer {
   footer {
     font-size: 9px;
   }
-
-  /* .address {
-    padding-left: 0px;
-  } */
 
   .company-info {
     padding: 20px 0 0 10px;
@@ -565,12 +562,12 @@ footer {
     margin: 0;
   }
 
-  .navBar {
+  .nav-bar {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .navMenu {
+  .nav-menu {
     display: flex;
     justify-content: space-evenly;
     padding: 10px 0;
@@ -585,11 +582,10 @@ footer {
     padding: 15px 0;
   }
 
-  .collection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 15px;
+  .best-image {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
   }
 
   .policy {
