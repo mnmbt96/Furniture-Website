@@ -2,7 +2,8 @@
 
 Created a furniture company’s website which leads to e-commerce site, so they can sell their products online.
 
-Focused on responsive design, adjust every element depending on the size of the devices.
+Focused on responsive design.
+Adjusted every element depending on the size of the devices by using flexbox.
 
 🔗Link to the website: 
 https://furniture-website-omega.vercel.app/
